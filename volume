@@ -1,0 +1,13 @@
+#!/bin/bash
+
+VOL=$(pamixer --get-volume);
+ICON="";
+
+if $(pamixer --get-mute | grep -q true)
+then
+	ICON="󰝟";
+else
+	ICON="󰕾";
+fi
+
+echo "$ICON VOL:$VOL"

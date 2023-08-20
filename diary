@@ -1,0 +1,6 @@
+#!/bin/bash
+DAT=$(date +%Y-%m-%d_%I:%M_%p)
+echo "+++" >> ~/code/web/content/diary/$(date "+%Y-%m-%d_%I:%M_%p").md
+echo title= "'$(date +%Y-%m-%d_%I:%M_%p)'" >> ~/code/web/content/diary/$(date "+%Y-%m-%d_%I:%M_%p").md
+echo "+++" >> ~/code/web/content/diary/$(date "+%Y-%m-%d_%I:%M_%p").md
+nvim ~/code/web/content/diary/$(date "+%Y-%m-%d_%I:%M_%p").md
